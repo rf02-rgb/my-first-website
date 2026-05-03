@@ -16,21 +16,33 @@
 
 <body>
 
-<!-- NAV -->
-<header class="navbar">
-  <i class="fa-solid fa-bars"></i>
-  <div class="logo">K-DILLER</div>
-  <div class="nav-icons">
-    <i class="fa-solid fa-heart"></i>
-    <i class="fa-solid fa-user"></i>
-    <i class="fa-solid fa-bag-shopping"></i>
-  </div>
-</header>
+<!-- HEADER -->
+<div class="site-header">
 
-<!-- SEARCH -->
-<div class="search-wrapper">
-  <input type="text" placeholder="What are you looking for?">
-  <i class="fa-solid fa-search"></i>
+  <!-- NAV -->
+  <header class="navbar">
+    <i class="fa-solid fa-bars"></i>
+    <div class="logo">K-DILLER</div>
+    <div class="nav-icons">
+      <i class="fa-solid fa-heart"></i>
+      <i class="fa-solid fa-user"></i>
+      <i class="fa-solid fa-bag-shopping"></i>
+    </div>
+  </header>
+
+  <!-- SEARCH -->
+  <div class="search-wrapper">
+    <input id="searchInput" type="text" placeholder="What are you looking for?">
+    <i class="fa-solid fa-search"></i>
+
+    <div class="search-dropdown" id="searchDropdown">
+    <a href="womenswear.html">Womenswear</a>
+    <a href="menswear.html">Menswear</a>
+    <a href="#">Accessories</a>
+    <a href="#">Sale</a>
+    </div>
+  </div>
+
 </div>
 
 <!-- HERO -->
@@ -70,6 +82,66 @@
     </p>
   </div>
 </section>
+
+<!-- Footer -->
+<section class="footer">
+
+  <div class="footer-top">
+
+    <!-- LEFT -->
+    <div class="footer-social">
+      <h4>Follow Us</h4>
+      <div class="social-icons">
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-youtube"></i>
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-x-twitter"></i>
+        <i class="fa-brands fa-tiktok"></i>
+      </div>
+    </div>
+
+    <!-- CENTER -->
+    <div class="footer-newsletter">
+      <h4>Stay Posted</h4>
+      <p>
+        Sign up to our Newsletter for latest news, offers and updates.
+      </p>
+
+      <div class="email-box">
+        <input type="email" placeholder="Email">
+        <button>Submit</button>
+      </div>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="footer-links">
+      <div class="footer-link">
+        <span>Customer Service</span>
+        <span>+</span>
+      </div>
+
+      <div class="footer-link">
+        <span>Student Discount</span>
+        <span>+</span>
+      </div>
+
+      <div class="footer-link">
+        <span>Terms & Conditions</span>
+        <span>+</span>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 K-Diller Australia | Terms of Use | Privacy Policy</p>
+    <p>Cookies Policy | Accessibility Statement</p>
+  </div>
+
+</section>
+
+<!-- JS -->
+<script src="script.js"></script>
 
 </body>
 </html>
