@@ -4,24 +4,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- 字体 -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Permanent+Marker&display=swap" rel="stylesheet">
-
-  <!-- 图标 -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <link rel="stylesheet" href="style.css">
-  <title>Womenswear | K-Diller</title>
+  <title>Product Detail | K-Diller</title>
 </head>
 
 <body>
 
-<!-- HEADER -->
 <div class="site-header">
 
   <header class="navbar">
-    <i class="fa-solid fa-bars"></i>
+    <a href="womenswear.html" class="back-link">
+      <i class="fa-solid fa-arrow-left"></i>
+    </a>
+
     <div class="logo">K-DILLER</div>
+
     <div class="nav-icons">
       <i class="fa-solid fa-heart"></i>
       <i class="fa-solid fa-user"></i>
@@ -43,90 +43,90 @@
 
 </div>
 
-<!-- WOMENS HERO -->
-<section class="womens-hero">
-  <img src="images/womens-hero.jpg" alt="Womenswear campaign image">
-  <h1>SHAPE YOURSELF</h1>
-</section>
+<section class="product-detail-page">
 
-<!-- PRODUCT SECTION -->
-<section class="product-section">
-
-  <h2>WOMEN'S CLOTHING & APPAREL</h2>
-
-  <div class="filter-row">
-    <i class="fa-solid fa-sliders"></i>
-    <span>FILTERS SORT</span>
+  <div class="detail-images">
+    <img src="images/product1-front view.jpg" alt="Product front view">
+    <img src="images/product2-close-up view.jpg" alt="Product close-up view">
+    <img src="images/product3-back view.jpg" alt="Product back view">
   </div>
 
-  <div class="product-grid">
+  <div class="detail-info">
 
-    <!-- 第一行 -->
-    <div class="promo-card">
-      <img src="images/womens-promo-1.jpg" alt="Womenswear campaign image">
+    <div class="detail-title-row">
+      <h1>Drifter Low Rise Straight Leg Jeans in Painter Wash</h1>
+      <i class="fa-regular fa-heart"></i>
     </div>
 
-    <a href="product-1.html" class="product-link">
-      <div class="product-card">
-        <div class="product-image">
-          <img src="images/product-1.jpg" alt="Vellora Low Rise Straight Leg Jeans">
-          <i class="fa-regular fa-heart"></i>
-        </div>
-        <div class="product-info">
-          <p>Vellora Low Rise Straight Leg Jeans in Painter Wash</p>
-          <span>$235</span>
-        </div>
-      </div>
-    </a>
+    <p class="detail-price">$235</p>
 
-    <div class="product-card product-side-gap">
-      <div class="product-image">
-        <img src="images/product-2.jpg" alt="Solira Button Cut-Out Top">
-        <i class="fa-regular fa-heart"></i>
-      </div>
-      <div class="product-info">
-        <p>Solira Button Cut-Out Top with Pearl Detail</p>
-        <span>$115</span>
-      </div>
+    <div class="size-row">
+      <span>SIZE:</span>
+      <a href="#">Size Guide</a>
     </div>
 
-    <!-- 第二行 -->
-    <div class="product-card">
-      <div class="product-image">
-        <img src="images/product-3.jpg" alt="Sheer Striped Henley Mini Dress">
-        <i class="fa-regular fa-heart"></i>
-      </div>
-      <div class="product-info">
-        <p>Sheer Striped Henley Mini Dress</p>
-        <span>$105</span>
-      </div>
+    <div class="size-options">
+      <button>W24</button>
+      <button>W25</button>
+      <button>W26</button>
+      <button>W27</button>
+      <button>W28</button>
+      <button>W29</button>
+      <button>W30</button>
+      <button>W32</button>
+      <button>W34</button>
     </div>
 
-    <div class="product-card product-side-gap">
-      <div class="product-image">
-        <img src="images/product-4.jpg" alt="Romie Check Backless Mini Dress">
-        <i class="fa-regular fa-heart"></i>
-      </div>
-      <div class="product-info">
-        <p>Romie Check Backless Mini Dress</p>
-        <span>$180</span>
-      </div>
-    </div>
-
-    <div class="promo-card">
-      <img src="images/womens-promo-2.jpg" alt="Womenswear campaign image">
-    </div>
+   <button class="add-to-bag" id="addToBagBtn">ADD TO BAG</button>
 
   </div>
 
+  <div class="product-accordion">
+
+    <div class="accordion-item">
+      <button class="accordion-header">
+        <span>Description</span>
+        <span>+</span>
+      </button>
+      <div class="accordion-content">
+        <p>
+          Low-rise straight-leg jeans crafted from painter-wash denim with distressed detailing and a relaxed streetwear silhouette.
+        </p>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <button class="accordion-header">
+        <span>Delivery</span>
+        <span>+</span>
+      </button>
+      <div class="accordion-content">
+        <p>
+          Standard delivery is available across Australia. Delivery times may vary depending on location.
+        </p>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <button class="accordion-header">
+        <span>Return</span>
+        <span>+</span>
+      </button>
+      <div class="accordion-content">
+        <p>
+          Items can be returned within 14 days if unworn, unused, and in original condition.
+        </p>
+      </div>
+    </div>
+
+  </div>
+
 </section>
 
-<!-- Footer -->
 <section class="footer">
 
   <div class="footer-top">
 
-    <!-- LEFT -->
     <div class="footer-social">
       <h4>Follow Us</h4>
       <div class="social-icons">
@@ -138,7 +138,6 @@
       </div>
     </div>
 
-    <!-- CENTER -->
     <div class="footer-newsletter">
       <h4>Stay Posted</h4>
       <p>
@@ -151,7 +150,6 @@
       </div>
     </div>
 
-    <!-- RIGHT -->
     <div class="footer-links">
       <div class="footer-link">
         <span>Customer Service</span>

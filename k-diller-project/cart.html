@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Permanent+Marker&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+  <title>Shopping Bag | K-Diller</title>
+</head>
+
+<body>
+
+<section class="cart-page">
+
+  <!-- CART HEADER -->
+  <div class="cart-header">
+    <h1>Bag (<span id="cartCount">1</span>)</h1>
+    <a href="product-1.html" class="cart-close">×</a>
+  </div>
+
+  <!-- CART PRODUCT -->
+  <div class="cart-product">
+
+    <img
+      id="cartMainImage"
+      src="images/product1-front view.jpg"
+      alt="Drifter Low Rise Straight Leg Jeans in Painter Wash"
+      class="cart-main-image"
+    >
+
+    <div class="cart-product-info">
+      <h2 id="cartProductName">Drifter Low Rise Straight Leg Jeans in Painter Wash</h2>
+      <p id="cartProductPrice">$235</p>
+      <p id="cartProductSize">W27</p>
+
+      <div class="cart-actions">
+        <div class="quantity-box">
+          <button id="decreaseQty" type="button">−</button>
+          <span id="cartQuantity">1</span>
+          <button id="increaseQty" type="button">+</button>
+        </div>
+
+        <button id="removeItem" class="remove-btn" type="button">Remove</button>
+      </div>
+    </div>
+
+  </div>
+
+  <a href="product-1.html" class="continue-shopping">Continue Shopping</a>
+
+  <!-- RECOMMENDATION -->
+  <section class="cart-recommend">
+    <h3>Get it or regret it</h3>
+
+    <div class="recommend-grid">
+
+      <div class="recommend-card">
+        <img src="images/recommend-1.jpg" alt="Vellora Low-Rise Checked Trousers">
+        <p>Vellora Low-Rise<br>Checked Trousers</p>
+        <span>$175</span>
+      </div>
+
+      <div class="recommend-card">
+        <img src="images/recommend-2.jpg" alt="Rebel Military Mini Shorts in Clay Wash">
+        <p>Rebel Military Mini<br>Shorts in Clay Wash</p>
+        <span>$140</span>
+      </div>
+
+      <div class="recommend-card">
+        <img src="images/recommend-3.jpg" alt="Rebel Military Top in PU Leather">
+        <p>Rebel Military Top<br>in PU Leather</p>
+        <span>$165</span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CART SUMMARY -->
+  <section class="cart-summary">
+    <div>
+      <p>SUB TOTAL</p>
+      <p>SHIPPING</p>
+      <p class="total-label">TOTAL</p>
+    </div>
+
+    <div>
+      <p id="subtotalPrice">$235.00</p>
+      <p>Estimated at checkout</p>
+      <p id="totalPrice" class="total-value">$235.00</p>
+    </div>
+  </section>
+
+  <p class="cart-note">
+    Prices may not include local taxes and duties, and you may be liable to pay these upon delivery.
+    Products on sale are not eligible for a refund, exchange or store credit. Thank you for your understanding!
+  </p>
+
+  <!-- BOTTOM BUTTONS -->
+  <div class="cart-bottom-buttons">
+    <a href="cart.html">VIEW BAG</a>
+    <a href="#">CHECKOUT</a>
+  </div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
