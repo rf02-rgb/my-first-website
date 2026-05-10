@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <title>Checkout | K-Diller</title>
+</head>
+
+<body>
+
+<header class="checkout-logo">
+  <a href="index.html">K-DILLER</a>
+</header>
+
+<section class="checkout-page">
+
+  <div class="order-summary-header">
+    <span>Order summary ^</span>
+    <strong id="checkoutHeaderTotal">$0.00</strong>
+  </div>
+
+  <section class="checkout-summary">
+
+    <div id="checkoutItemsContainer"></div>
+
+    <div class="gift-row">
+      <input type="text" placeholder="Gift card no.">
+      <input type="text" placeholder="4 digit PIN">
+      <button type="button">Apply</button>
+    </div>
+
+    <div class="discount-row">
+      <input type="text" placeholder="Discount code">
+      <button type="button">→</button>
+    </div>
+
+    <div class="checkout-totals">
+      <div>
+        <p>Subtotal · <span id="checkoutItemCount">0</span> items</p>
+        <p>Shipping</p>
+        <h3>Total</h3>
+        <small>Including $29.99 in taxes</small>
+      </div>
+
+      <div>
+        <p id="checkoutSubtotal">$0.00</p>
+        <p>Enter shipping address</p>
+        <h3>AUD <span id="checkoutTotal">$0.00</span></h3>
+      </div>
+    </div>
+
+    <p class="checkout-note">
+      Prices may not include local taxes and duties, and you may be liable to pay these upon delivery.
+      Products on sale are not eligible for a refund, exchange or store credit. Thank you for your understanding!
+    </p>
+
+  </section>
+
+  <section class="express-checkout">
+    <p>Express checkout</p>
+
+    <div class="express-buttons">
+
+      <a href="thank-you.html" class="shop-pay">
+        shop
+      </a>
+
+      <a href="thank-you.html" class="paypal-pay">
+        <span class="paypal-logo">
+          Pay<span>Pal</span>
+        </span>
+      </a>
+
+      <a href="thank-you.html" class="apple-pay">
+        <i class="fa-brands fa-apple"></i>
+        <span>Pay</span>
+      </a>
+
+      <a href="thank-you.html" class="gpay">
+        <span class="google-g">G</span>
+        <span>Pay</span>
+      </a>
+
+    </div>
+  </section>
+
+  <div class="checkout-divider">
+    <span>OR</span>
+  </div>
+
+  <section class="checkout-form">
+
+    <div class="checkout-section-title">
+      <h2>Contact</h2>
+      <a href="#">Sign in</a>
+    </div>
+
+    <input type="email" placeholder="Email">
+
+    <label class="checkbox-row">
+      <input type="checkbox" checked>
+      <span>Email me with news and offers</span>
+    </label>
+
+    <h2>Delivery</h2>
+
+    <select>
+      <option>Australia</option>
+    </select>
+
+    <input type="text" placeholder="First name">
+    <input type="text" placeholder="Last name">
+    <input type="text" placeholder="Company">
+    <input type="text" placeholder="Address">
+    <input type="text" placeholder="Apartment, suite, etc.">
+    <input type="text" placeholder="Suburb">
+
+    <select>
+      <option>Victoria</option>
+    </select>
+
+    <input type="text" placeholder="Postcode">
+    <input type="text" placeholder="Phone">
+
+    <label class="checkbox-row">
+      <input type="checkbox">
+      <span>Text me with news and offers</span>
+    </label>
+
+    <h2>Payment</h2>
+    <p class="payment-note">All transactions are secure and encrypted.</p>
+
+    <div class="payment-box">
+      <div class="payment-title">
+        <span>● Credit or Debit Card</span>
+        <span>VISA / AMEX</span>
+      </div>
+
+      <input type="text" placeholder="Card Number">
+      <input type="text" placeholder="Expiration date (MM / YY)">
+      <input type="text" placeholder="Security code">
+      <input type="text" placeholder="Name on card">
+
+      <label class="checkbox-row">
+        <input type="checkbox" checked>
+        <span>Use shipping address as billing address</span>
+      </label>
+    </div>
+
+    <a href="thank-you.html" class="pay-now-btn">Pay now</a>
+
+    <a href="cart.html" class="return-cart">‹ Return to cart</a>
+
+  </section>
+
+</section>
+
+<footer class="checkout-footer">
+  <a href="#">Refund policy</a>
+  <a href="#">Privacy policy</a>
+  <a href="#">Terms of service</a>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
